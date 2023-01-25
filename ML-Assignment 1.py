@@ -8,9 +8,12 @@ ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 ages.sort()
 ages.append(min(ages))
 ages.append(max(ages))
+#finding mean
 print((sum(ages))/len(ages))
 ages.sort()
+#finding median
 print((ages[6]+ages[7])/2)
+#finding range
 print(max(ages)-min(ages))
 
 
@@ -24,6 +27,7 @@ student={ "first_name":"Manisha", "last_name":"Addula", "gender":"Female", "age"
 print(len(student))
 print(student['skills'])
 print(type(student['skills']))
+#adding extra skills
 student["skills"].append("html")
 print(student.keys())
 print(student.values())
@@ -113,9 +117,13 @@ while(True):
 
 
 str = "I am a teacher and I love to inspire and teach people"
+#splitting string into list
 splt = str.split()
+#making it into set because set has unique values
 set_splt = set (splt)
+#changing it to list to print
 unique_splt = ( list (set_splt))
+#printing list
 for n in unique_splt:
     print (n)
 print(len(unique_splt))
@@ -133,9 +141,9 @@ print("Asabenah\t250\tFinland\t Helsinki") #printing values
 # In[48]:
 
 
-#Use the string formatting method to display the following:
 radius = 10
 area = 3.14 * radius ** 2
+#Use the string formatting method to display
 f'The area of a circle with radius {radius} is {area} meters square.'
 
 
